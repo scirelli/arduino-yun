@@ -1,0 +1,5 @@
+/opt/arduino-1.6.3/hardware/tools/avr/bin/avrdude -C/opt/arduino-1.6.3/hardware/tools/avr/etc/avrdude.conf -v -pattiny85 -cdragon_isp -B 10 -P usb -e -Uflash:w:/tmp/playanim.hex:i
+
+/opt/arduino-1.6.3/hardware/tools/avr/bin/avrdude -C/opt/arduino-1.6.3/hardware/tools/avr/etc/avrdude.conf -v -pattiny85 -cstk500v1 -P/dev/ttyACM0 -b19200 -Uflash:w:/tmp/playanim.hex:i
+
+/opt/arduino-1.6.3/hardware/tools/avr/bin/avrdude -C/opt/arduino-1.6.3/hardware/tools/avr/etc/avrdude.conf -v -pattiny85 -cstk500v1 -P/dev/ttyACM0 -B 10 -Uflash:w:/tmp/playanim.hex:i
